@@ -16,7 +16,4 @@ layout: home
 		{% if p.excerpt %}<p>{{ p.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
 	</li>
 {% endfor %}
-	{% if blog_pages == empty %}
-	<li>No posts found in the blogs folder yet.</li>
-	{% endif %}
 </ul>
