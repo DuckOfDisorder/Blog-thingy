@@ -30,8 +30,11 @@ plugins:
 
 minima:
   skin: dark
+  hide_site_feed_link: true
+  show_excerpts: true
   nav_pages:
-    - blogs/001.md
+    - index.markdown
+    - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
