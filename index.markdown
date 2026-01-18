@@ -4,8 +4,9 @@
 
 layout: home
 ---
-
-<h2> Support Me <a href="https://support.ofdisorder.de"> Here! </a> </h2> <br>
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
 <h2>Blog Posts</h2>
 <ul class="post-list">
 {% assign blog_pages = site.pages | where_exp: "p", "p.path contains 'blogs/'" | sort: "date" | reverse %}

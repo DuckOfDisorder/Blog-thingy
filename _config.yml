@@ -31,6 +31,16 @@ plugins:
 minima:
   skin: dark
   hide_site_feed_link: true
+  social_links:
+  - title: GitHub
+    icon: github
+    url: "https://github.com/DuckOfDisorder/"
+  - title: ActivityPub / Mastodon
+    icon: mastodon
+    url: "https://eepy.moe/@Artemis"
+  - title: Support Me!
+    icon: paypal
+    url: "https://support.ofdisorder.de"
   show_excerpts: true
   nav_pages:
     - index.markdown
