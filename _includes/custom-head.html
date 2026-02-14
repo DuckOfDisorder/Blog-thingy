@@ -1,0 +1,44 @@
+<link rel="stylesheet" id="dark-theme-css" href="{{ '/assets/css/dark.css' | relative_url }}">
+
+<script>
+    let theme = localStorage.getItem("theme");
+    if (theme === "light") {
+        document.getElementById("dark-theme-css").setAttribute("disabled", "disabled");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const darkSheet = document.getElementById("dark-theme-css");
+        const nav = document.querySelector('.social-media-list');
+        
+        if (nav) {
+            const container = document.createElement("li");
+            const butt = document.createElement("a");
+            const icon = document.createElement("span");
+            butt.title = "Theme";
+            butt.style.cursor = "pointer";
+            
+            if (theme === "light") {
+                icon.className = "grey fa-solid fa-moon fa-lg";
+            } else {
+                icon.className = "grey fa-solid fa-sun fa-lg";
+            }
+            
+        butt.onclick = function(e) {
+            e.preventDefault();
+            if (darkSheet.disabled) {
+                darkSheet.removeAttribute("disabled");
+                localStorage.setItem("theme", "dark");
+                icon.className = "grey fa-solid fa-sun fa-lg";
+            } else {
+                darkSheet.setAttribute("disabled", "disabled");
+                localStorage.setItem("theme", "light");
+                icon.className = "grey fa-solid fa-moon fa-lg";
+            }
+        };
+        
+        butt.appendChild(icon);
+        container.appendChild(butt);
+        nav.appendChild(container);
+        }
+    });
+</script>

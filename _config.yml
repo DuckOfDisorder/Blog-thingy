@@ -29,7 +29,7 @@ plugins:
   - jekyll-feed
 
 minima:
-  skin: dark
+  skin: classic
   hide_site_feed_link: true
   social_links:
   - title: GitHub
