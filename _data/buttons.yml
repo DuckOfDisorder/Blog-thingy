@@ -1,0 +1,11 @@
+# _data/buttons.yml
+
+b00.png: 
+  alt: "A fluffy duck sitting next to the trans flag, with text that reads TEMMIE!"
+  link: "https://blog.ofdisorder.de/"
+  txt: "My button! Feel free to use it wherever you want, and link to my site!"
+
+b01.gif: 
+  alt: "green alien associated with lisp having five eyes waves a triangular flag that reads Drew"
+  link: "https://drewsh.com/"
+  txt: "Cool person, go to their site for lots of computer nerd stuff."
